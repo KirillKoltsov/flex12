@@ -317,39 +317,18 @@
 							</div>
 							<div class="col-md-4 col-md-offset-1">
 								<div class="project-image">
-									<div id="fcSlideshow" class="fc-slideshow" style="position:relative;overflow:hidden;border-radius:4px;height:220px;">
-										<div class="css-slider" style="display:flex;height:220px;transition:transform 0.6s ease;width:800%;">
-											<img src="img/projects/project-home-4.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:220px;" />
-											<img src="img/projects/project-home-5.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:220px;" />
-											<img src="img/projects/project-home-6.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:220px;" />
-											<img src="img/projects/project-home-7.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:220px;" />
-											<img src="img/projects/project-home-8.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:220px;" />
-											<img src="img/projects/project-home-1.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:220px;" />
-											<img src="img/projects/project-home-2.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:220px;" />
-											<img src="img/projects/project-home-3.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:220px;" />
+									<div id="fcSlideshow" class="fc-slideshow" style="position:relative;overflow:hidden;width:100%;height:260px;">
+										<div class="css-slider" style="display:flex;height:260px;transition:transform 0.7s ease;width:800%;">
+											<img src="img/projects/project-home-4.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:260px;" />
+											<img src="img/projects/project-home-5.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:260px;" />
+											<img src="img/projects/project-home-6.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:260px;" />
+											<img src="img/projects/project-home-7.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:260px;" />
+											<img src="img/projects/project-home-8.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:260px;" />
+											<img src="img/projects/project-home-1.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:260px;" />
+											<img src="img/projects/project-home-2.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:260px;" />
+											<img src="img/projects/project-home-3.jpg" style="width:12.5%;flex-shrink:0;object-fit:cover;height:260px;" />
 										</div>
-										<div style="position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:10;">
-											<span id="sd0" onclick="goSlide(0)" style="width:8px;height:8px;border-radius:50%;background:#fff;opacity:1;cursor:pointer;display:block;box-shadow:0 1px 3px rgba(0,0,0,0.5)"></span>
-											<span id="sd1" onclick="goSlide(1)" style="width:8px;height:8px;border-radius:50%;background:#fff;opacity:0.45;cursor:pointer;display:block;box-shadow:0 1px 3px rgba(0,0,0,0.5)"></span>
-											<span id="sd2" onclick="goSlide(2)" style="width:8px;height:8px;border-radius:50%;background:#fff;opacity:0.45;cursor:pointer;display:block;box-shadow:0 1px 3px rgba(0,0,0,0.5)"></span>
-											<span id="sd3" onclick="goSlide(3)" style="width:8px;height:8px;border-radius:50%;background:#fff;opacity:0.45;cursor:pointer;display:block;box-shadow:0 1px 3px rgba(0,0,0,0.5)"></span>
-											<span id="sd4" onclick="goSlide(4)" style="width:8px;height:8px;border-radius:50%;background:#fff;opacity:0.45;cursor:pointer;display:block;box-shadow:0 1px 3px rgba(0,0,0,0.5)"></span>
-											<span id="sd5" onclick="goSlide(5)" style="width:8px;height:8px;border-radius:50%;background:#fff;opacity:0.45;cursor:pointer;display:block;box-shadow:0 1px 3px rgba(0,0,0,0.5)"></span>
-											<span id="sd6" onclick="goSlide(6)" style="width:8px;height:8px;border-radius:50%;background:#fff;opacity:0.45;cursor:pointer;display:block;box-shadow:0 1px 3px rgba(0,0,0,0.5)"></span>
-											<span id="sd7" onclick="goSlide(7)" style="width:8px;height:8px;border-radius:50%;background:#fff;opacity:0.45;cursor:pointer;display:block;box-shadow:0 1px 3px rgba(0,0,0,0.5)"></span>
-										</div>
-										<script>
-										(function(){
-											var c=0, total=8;
-											var track=document.querySelector('#fcSlideshow .css-slider');
-											window.goSlide=function(n){
-												c=n;
-												track.style.transform='translateX(-'+(100/total*c)+'%)';
-												for(var i=0;i<total;i++){var el=document.getElementById('sd'+i);if(el)el.style.opacity=i===c?'1':'0.45';}
-											};
-											setInterval(function(){goSlide((c+1)%total);},3500);
-										})();
-										</script>
+										<script>(function(){var c=0,n=8,t=document.querySelector('#fcSlideshow .css-slider');setInterval(function(){c=(c+1)%n;t.style.transform='translateX(-'+(100/n*c)+'%)';},3500);})();</script>
 									</div>
 									<strong class="our-work">Ваша продукция</strong>
 								</div>
