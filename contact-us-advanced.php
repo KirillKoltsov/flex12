@@ -109,7 +109,7 @@ if(isset($_POST['emailSent'])) {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Web Fonts  -->
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
 		<!-- Libs CSS -->
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
@@ -654,7 +654,7 @@ if(isset($_POST['emailSent'])) {
 								</a>
 							</div>
 							<div class="col-md-7">
-								<p>© Copyright 2014. All Rights Reserved.</p>
+								<p>В© Copyright 2014. All Rights Reserved.</p>
 							</div>
 							<div class="col-md-4">
 								<nav id="sub-menu">
