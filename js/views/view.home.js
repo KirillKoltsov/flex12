@@ -25,7 +25,7 @@ Version: 		3.1.0
 		build: function(options) {
 
 			// Circle Slider
-			if(typeof($.fn.flipshow()) != "undefined") {
+			if(typeof($.fn.flipshow) != "undefined") {
 				var circleContainer = $("#fcSlideshow");
 				
 				if(circleContainer.get(0)) {
